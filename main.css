@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(8, 14, 46);
+    background-color: #648cc798;
+    text-align: auto;
+}
+footer {
+    background-color: rgb(62, 96, 164);
+}
+
+header {
+    flex: content;
+}
