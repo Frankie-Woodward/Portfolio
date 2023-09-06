@@ -1,16 +1,45 @@
 * {
-    box-sizing: border-box;
+ 
+    box-sizing:border-box;
+    border-width: 5px;
 }
-
 body {
-    color: rgb(8, 14, 46);
-    background-color: #648cc798;
-    text-align: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-rows:2fr 4fr 2fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "header header"
+    "left_main main_section"
+    ;
+    gap: 5px;
+    background: linear-gradient(to bottom, rgb(24, 86, 195), var(--bs-primary-bg-subtle));
 }
-footer {
-    background-color: rgb(62, 96, 164);
+.header { 
+  display: flex;
+    flex: content;
+    grid-column: 1 / 2;
+}
+.dropdown_menu {
+/* flex inside header to the right */
+}
+.enter_here{
+display: grid;
+grid-column: 1/2;
 }
 
-header {
-    flex: content;
+.main_section {
+
+}
+.profile_pic {
+
+}
+.email_me {
+    height: 20vh;
+    width: 20vw;
+    display: grid;
+    grid-column: 2/2;
+}
+.footer {
+    background-color: rgb(7, 60, 168);
 }
