@@ -3,43 +3,89 @@
     box-sizing:border-box;
     border-width: 5px;
 }
+
+.header { 
+    display: flex;
+    flex-direction:row-reverse;
+    padding: 50px;
+    grid-area: header;
+}
+.main_section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items:center;
+    grid-area: main_section;
+    background-color: rgba(12, 64, 174, 0.73);
+    border-style:outset;
+    border-width: 20px;
+    border-color: rgb(38, 38, 198);
+}
+.enter_here{
+        display: flex;
+        grid-area: enter_here;
+        padding-left: 350px;
+        padding-top: 200px;
+}
+.email_me {
+    height: 15vh;
+    width: 20vw;
+    display: flex;
+    grid-area: email_me;
+    padding-top: 50px;
+    padding-left: 50px;
+   
+}
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px 400px ;
+    background-color: rgb(7, 60, 168);
+    grid-area: footer;
+}
+
+
+
 body {
     height: 100vh;
     display: grid;
-    grid-template-rows:2fr 4fr 2fr;
-    grid-template-columns: 1fr 4fr;
+    grid-template-rows:2fr 4fr 2fr 1fr;
+    grid-template-columns: 2fr 4fr 1fr;
     grid-template-areas: 
-    "header header"
-    "left_main main_section"
-    ;
+    "header header header"
+    "enter_here main_section ."
+    "left_side email_me email_me"
+    "footer footer footer";
     gap: 5px;
     background: linear-gradient(to bottom, rgb(24, 86, 195), var(--bs-primary-bg-subtle));
 }
-.header { 
-  display: flex;
-    flex: content;
-    grid-column: 1 / 2;
-}
+
+
 .dropdown_menu {
+    display: flex;
+   
 /* flex inside header to the right */
 }
-.enter_here{
-display: grid;
-grid-column: 1/2;
-}
 
-.main_section {
 
-}
+
 .profile_pic {
+display: flex;
+flex-direction: row;
+padding-top: 20px;
+
 
 }
-.email_me {
-    height: 20vh;
-    width: 20vw;
-    display: grid;
-    grid-column: 2/2;
+
+.name_title {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px 200px 0px;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
-.footer {
-    background-color: rgb(7, 60, 168);
+.main_content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 200px 75px;
 }
