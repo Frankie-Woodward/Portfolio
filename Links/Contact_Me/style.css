@@ -1,0 +1,81 @@
+* {
+ 
+    box-sizing:border-box;
+    border-width: 5px;
+}
+
+.header { 
+    display: flex;
+    grid-area: header;
+}
+.left_content {
+    display: flex;
+    justify-content:left;
+    align-items:normal;
+    grid-area: left_content;
+    background-color: rgba(12, 64, 174, 0.73);
+    border-style:outset;
+    border-width: 20px;
+    border-color: rgb(38, 38, 198);
+}
+.right_content {    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items:center;
+    grid-area: right_content;
+    background-color: rgba(12, 64, 174, 0.73);
+    border-style:outset;
+    border-width: 20px;
+    border-color: rgb(38, 38, 198);
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px 400px ;
+    background-color: rgb(7, 60, 168);
+    grid-area: footer;
+}
+
+
+/* //-- header - space - leftside middle rightside -space - footer // */
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows:2fr 4fr 1fr 1fr;
+    grid-template-columns: 4fr 2fr 4fr;
+    grid-template-areas: 
+    "header header header"
+    "left_content . right_content"
+    ". . ."
+    "footer footer footer";
+    gap: 5px;
+    background: fixed linear-gradient(to bottom, #2b5db3, var(--bs-primary-bg-subtle));
+   
+}
+
+#resumeModal {
+    display: none;
+    background: linear-gradient(to bottom, #2b5db3, var(--bs-primary-bg-subtle));
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#myResume {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+	width: 600px;
+	border-radius: 2px;
+    margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
