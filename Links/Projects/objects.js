@@ -1,12 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-    const homeLink = document.querySelector('.nav-link.active');
 
-    homeLink.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent the default link behavior
-        window.location.href = "/../../index.html"; // Navigate to the same URL
-    });
-});
 const dark_modeBtn = document.querySelector('.dark_mode');
 const body = document.body;
 const leftContent = document.querySelector('.left_content');
@@ -40,3 +33,11 @@ dark_modeBtn.addEventListener('click', function() {
 isDarkMode = !isDarkMode;
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const homeLink = document.querySelector('.nav-link.active');
+
+    homeLink.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default link behavior
+        window.location.href = "../../index.html"; // Navigate to the same URL
+    });
+});
