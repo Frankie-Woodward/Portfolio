@@ -4,6 +4,7 @@
     border-width: 5px;
 }
 
+
 .header { 
     display: flex;
     grid-area: header;
