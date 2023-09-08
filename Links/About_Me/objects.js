@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     homeLink.addEventListener('click', function (event) {
         event.preventDefault(); // Prevent the default link behavior
-        window.location.href = "/index.html"; // Navigate to the same URL
+        window.location.href = "../../index.html"; // Navigate to the same URL
     });
 });
 const dark_modeBtn = document.querySelector('.dark_mode');
