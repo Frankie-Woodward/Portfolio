@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     homeLink.addEventListener('click', function (event) {
         event.preventDefault(); // Prevent the default link behavior
-        window.location.href = "../../index.html"; 
+        window.location.href = "index.html"; 
     });
 });
 
