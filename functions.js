@@ -24,12 +24,35 @@ const mainSection = document.querySelector('.main_section');
 
 const darkGradient = 'linear-gradient(to bottom, rgb(7, 6, 110), rgb(17, 21, 28))';
 const mainDarkMode = 'rgba(182, 192, 219, 0.73)';
-const mainBorder = 'rgba(71, 115, 209, 0.73)';
-// border-color: rgb(106, 106, 141);
-// background-color: rgba(71, 115, 209, 0.73)
+const mainDarkBorder = 'rgba(71, 115, 209, 0.73)';
+
+const lightGradient = 'linear-gradient(to bottom, rgb(24, 86, 195), var(--bs-primary-bg-subtle)';
+const mainLightMode =  'rgba(12, 64, 174, 0.73)'; 
+const mainLightBorder = 'rgb(38, 38, 198)';
+
+let isDarkMode = false;
 
 dark_modeBtn.addEventListener('click', function() {
-    body.style.backgroundImage = darkGradient;
-    mainSection.style.backgroundColor = mainDarkMode;
-   mainSection.style.borderColor = mainBorder;
+    if (isDarkMode) {
+        body.style.backgroundImage = lightGradient;
+        mainSection.style.backgroundColor = mainLightMode;
+        mainSection.style.borderColor = mainLightBorder;
+
+    }
+    else {
+        body.style.backgroundImage = darkGradient;
+        mainSection.style.backgroundColor = mainDarkMode;
+        mainSection.style.borderColor = mainDarkBorder;
+    }
+    isDarkMode = !isDarkMode;
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const homeLink = document.querySelector('.nav-link.active');
+
+    homeLink.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default link behavior
+        window.location.href = "/index.html"; // Navigate to the same URL
+    });
+});
+
