@@ -40,4 +40,31 @@ dark_modeBtn.addEventListener('click', function() {
 isDarkMode = !isDarkMode;
 });
 
+// Personal Images inside of carousel
+let currentImgIndex = 0;
+let previousImgIndex = 0;
 
+const images = document.getElementsByClassName('images');
+
+const next = document.querySelector('.next')
+const prev = document.querySelector('.prev')
+
+next.addEventListener('click', function() {
+    previousImgIndex = currentImgIndex;
+    currentImgIndex++
+    images[previousImgIndex].style.display = 'none';
+    if (currentImgIndex >= images.length) {
+        currentImgIndex = 0;
+    }
+    images[currentImgIndex].style.display = "block"
+})
+
+prev.addEventListener('click', function() {
+    images[currentImgIndex].style.display = 'none';
+    currentImgIndex = previousImgIndex
+    previousImgIndex--
+    if (currentImgIndex < 0) {
+        currentImgIndex = images.length - 1;
+    }
+    images[currentImgIndex].style.display = 'block';
+})

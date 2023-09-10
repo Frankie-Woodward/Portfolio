@@ -10,6 +10,9 @@
     padding: 50px;
     grid-area: header;
 }
+#main_menu {
+    background: fixed linear-gradient(to bottom, #c0d5f7, var(--bs-primary-bg-subtle));
+}
 .main_section {
     display: flex;
     flex-direction: row-reverse;
@@ -43,7 +46,7 @@
     display: flex;
     flex-direction: row-reverse;
     padding: 50px 400px ;
-    background-color: rgb(7, 60, 168);
+    background-color: rgb(69, 111, 196);
     grid-area: footer;
 }
 
@@ -60,7 +63,7 @@ body {
     "left_side email_me email_me"
     "footer footer footer";
     gap: 5px;
-    background: linear-gradient(to bottom, rgb(24, 86, 195), var(--bs-primary-bg-subtle));
+    background: fixed linear-gradient(to top, #2b5db3, var(--bs-primary-bg-subtle));
 }
 
 

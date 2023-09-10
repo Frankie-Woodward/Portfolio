@@ -1,67 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>About Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>About Me</title>
 </head>
+
 <body>
-    <header class="header"> 
-        <nav id="main_menu" class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid"></div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Site Navigation</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Content
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../About_Me/about_me.html">About Me</a></li>
-                        <li><a class="dropdown-item" href="../Projects/projects.html">Projects</a></li>
-                        <li><a class="dropdown-item" href="../Contact_Me/contact_me.html">Contact Me</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-        </nav>
-    </header>
-    <div class="left_content">
-        <h2>About Me</h2>
-        <p>
-            <ul>
-                <li>Education</li>
-                <li>Professional Life</li>
-                <li>Hobbies</li> 
-            </ul>
-            
-        </p>
+  <header class="header">
+    <nav id="main_menu" class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Site Navigation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Content
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../About_Me/about_me.html">About Me</a></li>
+                <li><a class="dropdown-item" href="../Projects/projects.html">Projects</a></li>
+                <li><a class="dropdown-item" href="../Contact_Me/contact_me.html">Contact Me</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <div class="left_content">
+    <h2>About Me</h2>
+    <p>
+    <ul>
+      <li>Education</li>
+      <li>Professional Life</li>
+      <li>Hobbies</li>
+    </ul>
+
+    </p>
+  </div>
+  <div class="right_content">
+
+    
+      <img src="digital_world.jpg" class="about_me_topper" alt="">
+      <h3>My Personal Timeline</h3>
+
+      <div class="carousel_container"> <br>
+        <div class="carousel-button prev">
+          <span class="lnr lnr-arrow-left"></span>
+        </div>
+
+        <div class="carousel-pics">
+          <img src="chicago_skyline.jpg" alt="Chicago Skyline" title="Chicago Skyline" class="images">
+          <img src="apache.JPG" alt="aviation" title="Apache Helicopter in Iraq" class="images">
+          <img src="cSprings_skyline.jpg" alt="csprings" title="Colorado Springs" class="images">
+          <img src="snowboard.jpg" alt="snowboarding" title="Frankie Snowboarding" class="images">
+        </div>
+
+        <div class="carousel-button next">
+          <span class="lnr lnr-arrow-right"></span>
+        </div>
+
+      </div>
+
     </div>
-    <div class="right_content">
-        <h2>Personal Images</h2>
-        <h3>some content</h3>
-        <img class="carousel" src="" alt="personal pics">
-    </div>
-    <footer class="footer"><h4><button class="dark_mode">Try My <strong>Dark</strong> Mode!</button></h4></footer>
+    <footer class="footer">
+     <button class="dark_mode">Try My <strong>Dark</strong> Mode!</button>
+    </footer>
     <script src="objects.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
+
+<!-- <span class="lnr lnr-arrow-left"></span> -->
+<!-- <span class="lnr lnr-arrow-right"></span> -->
