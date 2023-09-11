@@ -59,6 +59,7 @@ List of the Technologies used:
     1. Implementing the navar was a headache, as I tried to build one from scratch. I tried to mimic the class example, but took too long and overcomplicated the situation. So I went with a Bootstrap design for the navbar
     2. I had multiple formatting issues with creating flex grids/boxes, and spent a lot of time custom changing font sizes and content alignment.
     3. I am still perfecting the dark mode style on my portfolio. My biggest issue is overthinking/complicating problems as well as starting too ambitous with project ideas.
+    4. I also wanted the navbar on the right side. But, since its using Bootsrap framework, I wasn't able to figure it out as of yet.
 
  Descriptions of next steps you have planned for your application
     1. I plan to implement a messaging to email box (its on the page, just not active at the moment)
