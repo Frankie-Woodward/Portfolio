@@ -3,6 +3,28 @@
     box-sizing:border-box;
     border-width: 5px;
 }
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .navbar {
+        padding: 10px;
+    }
+    .name_title, .main_content {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .profile_pic img {
+        max-width: 100%;
+        height: auto;
+    }
+    .enter_here {
+        display: block;
+        margin: 0 auto;
+    }
+}
 
 .header { 
     padding: 50px;
