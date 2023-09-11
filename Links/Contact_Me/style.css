@@ -12,18 +12,11 @@
     .navbar {
         padding: 10px;
     }
-    .name_title, .main_content {
+    .left_content, .right_content {
         text-align: center;
         margin: 20px 0;
     }
-    .profile_pic img {
-        max-width: 100%;
-        height: auto;
-    }
-    .enter_here {
-        display: block;
-        margin: 0 auto;
-    }
+
 }
 .header { 
     display: flex;
