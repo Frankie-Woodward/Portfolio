@@ -10,13 +10,14 @@
     grid-area: header;
 
 #main_menu {
-    background: fixed linear-gradient(to bottom, #1756c2, var(--bs-primary-bg-subtle));
+    background: fixed linear-gradient(to bottom, #c0d5f7, var(--bs-primary-bg-subtle));
 }
 
 }
 .left_content {
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content:space-evenly;
     align-items:center;
     grid-area: left_content;
     background-color: rgba(12, 64, 174, 0.73);
@@ -24,7 +25,9 @@
     border-width: 20px;
     border-color: rgb(38, 38, 198);
     margin-left: 100px;
+    font-family: 'Wellfleet', sans-serif;
 }
+
 
 
 .right_content {    
@@ -33,11 +36,12 @@
     align-items: center;
     justify-content: space-around;
     grid-area: right_content;
-    background-color: rgba(12, 64, 174, 0.73);
+     background-color: rgba(12, 64, 174, 0.73);
     border-style:outset;
     border-width: 20px;
     border-color: rgb(38, 38, 198);
     margin-right: 100px;
+    font-family: 'Wellfleet', sans-serif;
 }
 .about_me_topper {
     display: flex;
@@ -55,8 +59,8 @@
   
 .carousel-pics img {
     display: none;
-    height: 200px;
-    width: 300px;
+    height: 250px;
+    width: 200px;
     border-style: double;
     border-radius: 10%;
     border-color:rgb(26, 4, 187)
@@ -75,7 +79,7 @@
     display: flex;
     flex-direction: row-reverse;
     padding: 50px 400px ;
-    background-color: rgb(185, 203, 239);
+    background-color: rgb(69, 111, 196);
     grid-area: footer;
 }
 

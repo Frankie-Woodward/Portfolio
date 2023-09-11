@@ -21,12 +21,18 @@ enterBtn.addEventListener('click', function() {
 const dark_modeBtn = document.querySelector('.dark_mode');
 const body = document.body;
 const mainSection = document.querySelector('.main_section');
+const header = document.querySelector('header');
+const footer = document.querySelector('footer')
 
+// const darkHeader = ;
+// const darkFooter = ;
 const darkGradient = 'linear-gradient(to bottom, rgb(7, 6, 110), rgb(17, 21, 28))';
 const mainDarkMode = 'rgba(182, 192, 219, 0.73)';
 const mainDarkBorder = 'rgba(71, 115, 209, 0.73)';
 
-const lightGradient = 'linear-gradient(to bottom, rgb(24, 86, 195), var(--bs-primary-bg-subtle)';
+const lightHeader = 'fixed linear-gradient(to bottom, #c0d5f7, var(--bs-primary-bg-subtle))';
+const lightFooter = 'background-color: rgb(69, 111, 196)';
+const lightGradient = 'linear-gradient(to top, #2b5db3, var(--bs-primary-bg-subtle))';
 const mainLightMode =  'rgba(12, 64, 174, 0.73)'; 
 const mainLightBorder = 'rgb(38, 38, 198)';
 
@@ -37,7 +43,8 @@ dark_modeBtn.addEventListener('click', function() {
         body.style.backgroundImage = lightGradient;
         mainSection.style.backgroundColor = mainLightMode;
         mainSection.style.borderColor = mainLightBorder;
-
+        header.style.backgroundImage = lightHeader;
+        footer.style.backgroundColor = lightFooter;
     }
     else {
         body.style.backgroundImage = darkGradient;

@@ -5,8 +5,6 @@
 }
 
 .header { 
-    display: flex;
-   flex-direction: column-reverse;
     padding: 50px;
     grid-area: header;
 }
@@ -16,32 +14,22 @@
 .main_section {
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-between;
-    align-items:center;
+   
+    align-items: center;
     grid-area: main_section;
     background-color: rgba(12, 64, 174, 0.73);     /*  border-color: rgb(38, 38, 198); background-color: rgba(12, 64, 174, 0.73)*/
     border-style:outset;
     border-width: 20px;
     border-color: rgb(38, 38, 198);
+    font-family: 'Wellfleet', sans-serif;
 }
 .enter_here{
         display: flex;
-        grid-area: enter_here;
-        margin-left: 175px;
-        margin-top: 100px;
         height: 200px;
         width: 200px;
 }
 
-.email_me {
-    height: 15vh;
-    width: 20vw;
-    display: flex;
-    grid-area: email_me;
-    padding-top: 50px;
-    padding-left: 50px;
-   
-}
+
 .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -55,12 +43,13 @@
 body {
     height: 100vh;
     display: grid;
-    grid-template-rows:2fr 4fr 2fr 1fr;
-    grid-template-columns: 2fr 4fr 1fr;
+    grid-template-rows:2fr 2fr 3fr 2fr 1fr;
+    grid-template-columns: 3fr 5fr 1fr;
     grid-template-areas: 
     "header header header"
-    "enter_here main_section ."
-    "left_side email_me email_me"
+    ". . ."
+    ". main_section ."
+    ". . ."
     "footer footer footer";
     gap: 5px;
     background: fixed linear-gradient(to top, #2b5db3, var(--bs-primary-bg-subtle));
@@ -68,23 +57,23 @@ body {
 
 
 
-.profile_pic {
-display: flex;
-flex-direction: row;
-padding-top: 20px;
-
-
+.profile_pic img {
+   width: 50%;
+   height: auto;
+   border-radius: 40%;
+   border-width: 5px;
+   border-style: solid;
+   border-color: #1f4380;
+  
 }
 
 .name_title {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 150px 200px 0px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    padding: 0px 100px 200px 100px;
+   
+  
+    
 }
 .main_content {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 0px 200px 75px;
+
+    padding: 50px 100px 75px 100px;
 }

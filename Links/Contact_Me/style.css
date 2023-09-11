@@ -17,7 +17,6 @@
 .left_content {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
     align-items:center;
     grid-area: left_content;
     background-color: rgba(12, 64, 174, 0.73);
@@ -25,6 +24,7 @@
     border-width: 20px;
     border-color: rgb(38, 38, 198);
     margin-left: 100px;
+    font-family: 'Wellfleet', sans-serif;
 }
 .right_content {    
     display: flex;
@@ -37,6 +37,7 @@
     border-width: 20px;
     border-color: rgb(38, 38, 198);
     margin-right: 100px;
+    font-family: 'Wellfleet', sans-serif;
 }
 
 

@@ -23,6 +23,7 @@
     border-width: 20px;
     border-color: rgb(38, 38, 198);
     margin-left: 100px;
+    font-family: 'Wellfleet', sans-serif;
 }
 .right_content {    
     display: flex;
@@ -35,6 +36,7 @@
     border-width: 20px;
     border-color: rgb(38, 38, 198);
     margin-right: 100px;
+    font-family: 'Wellfleet', sans-serif;
 }
 
 
